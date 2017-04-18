@@ -3,13 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AbdulBasith - UX Designer & Front End Developer</title>
-<meta name="description" content="muabdulbasith">
-<meta name="author" content="muabdulbasith">
+<title>Saveen Chairs</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/fav.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/fav.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/fav.png">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -18,10 +21,11 @@
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,356 +35,354 @@
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" height="70" width="100" style="margin-top: -30px;margin-left: -70px;"></a><span class="companyName">Saveen Chairs</span></div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" class="page-scroll">About</a></li>
+        <li><a href="#portfolio" class="page-scroll">Products</a></li>
+        <li><a href="#restaurant-menu" class="page-scroll">Services</a></li>
+        <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
 <!-- Header -->
 <header id="header">
-  <div class="intro">
-    <div class="container">
-      <div class="row">
-        <div class="intro-text">
-          <h1>Hello, I'm <span class="name">Abdul Basith</span></h1>
-          <p>UX Designer & Front End Developer</p>
-          <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
+  <div id="myCarousel" class="intro carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/intro-bg.jpg" alt="Chania">
+      </div>
+
+      <div class="item">
+        <img src="img/intro2.jpg" alt="Chania">
+      </div>
+    
+      <div class="item">
+        <img src="img/intro3.jpg" alt="Flower">
+      </div>
+
+      <div class="item">
+        <img src="img/intro4.jpg" alt="Flower">
       </div>
     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicons glyphicons-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicons glyphicons-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </header>
-<!-- Navigation -->
-<div id="nav">
-  <nav class="navbar navbar-custom">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-        <a class="navbar-brand page-scroll" href="#page-top">Abdul Basith</a> </div>
-      
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#about">About</a> </li>
-          <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-          <li> <a class="page-scroll" href="#resume">Resume</a> </li>
-          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
 <!-- About Section -->
 <div id="about">
   <div class="container">
-    <div class="section-title text-center center">
-      <h2>About Me</h2>
-      <hr>
-    </div>
     <div class="row">
-      <div class="col-md-12 text-center"><img src="img/newabout.jpg" class="img-responsive"></div>
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-xs-12 col-md-6 ">
+        <div class="col-xs-12 col-md-12 ">
+        <div class="about-img"><img src="img/about.jpg" class="img-responsive" alt=""></div>
+        </div>
+        <div class="col-xs-12 col-md-12 " style="padding-top: 100px">
+        <div class="about-img"><img src="img/abouttwo.jpg" class="img-responsive" alt=""></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
         <div class="about-text">
-          <p>To pursue a career as a leading professional in a concern that a good advancement with challenging and innovative working environment.</p>
-          <p>I have 2+ years Experience in UI and UX development.Currently i'm working in Accenture service pvt ltd chennai</p>
-          <p class="text-center"><a class="btn btn-primary" href="AbdulBasith CV_2016.pdf" download><i class="fa fa-download"></i> Download Resume</a></p>
+          <h2>Welcome</h2>
+          <hr>
+          <p>Saveen Chair Service Point Founded in the year of 2000. We have a strong experience in this field. We have a more then 1000 clients.</p>
+          <p>Saveen Chair Service Point., with fast experience in the field of providing seating solutions have put in a lot of efforts and ingredients in bringing out the best for the quality conscious people a whole series of chairs 'ECONOMIC' pricing to provide high quality chairs at affordable prices without compromising on quality.</p>
+          <p>The chairs are categorized to suit to every job function mostly related to people working in MNC's, IT companies, corporates etc., We are confident in providing the best to the needs of our customers.</p>
+          <p>With the increased capacity, we are in a position to cater to larger volumes with our new facility within a short time. While designing Aster Chairs, we have taken care to provide importance to two major things viz.</p>
+          <h3>Our Qulaity</h3>
+          <p>Safety of the user & the comfort needed to improve work efficiency of the person.</p>
+          <p>Two Major reasons for back pain which is so common these days even amongst young professionals (working for 12 to 14 hours a day) are improper sitting posture and badly designed chair where we have taken every care to avoid the latter by providing goods designs.</p>
+          <p>We also educate our customers to avoid the former.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Skills Section -->
-<div id="skills" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Skills</h2>
+<!-- Restaurant Menu Section -->
+<div id="restaurant-menu">
+  <div class="section-title text-center center">
+    <div class="overlay">
+      <h2>Our Services</h2>
       <hr>
+      <p>We are provide good quliaty and services</p> 
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <h2 class="menu-section-title"> Chair Service Point</h2>
+          <hr>
+          <div class="menu-item">
+            <div class="menu-item-name"> Sofa set reparing and services </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Rolling chairs repairing and services</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Computer chairs repairing and services</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Office chairs repairing and services </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Office chair manufacturing </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Office Furnitures manufacturing in chennai </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <h2 class="menu-section-title"> Best Quality for</h2>
+          <hr>
+          <div class="menu-item">
+            <div class="menu-item-name"> Office Chairs </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Leather Executive Chairs </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Computer Chairs </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Sofa Sets </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Chair Wheels </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Chair Base and etc. </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
-        <h4>HTML5</h4>
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <h2 class="menu-section-title">Our other services</h2>
+          <hr>
+          <div class="menu-item">
+            <div class="menu-item-name"> Furniture Dealers </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Chairs On Hire </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Chair Repair & Services </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Wheel Chair Dealers </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Office Furniture Dealers </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">Wheel Chairs On Hire </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-        <h4>CSS3</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>Angular Js</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-        <h4>jQuery</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-        <h4>Java Script</h4>
-      </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-        <h4>Photoshop</h4>
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <h2 class="menu-section-title">Our other services</h2>
+          <hr>
+          <div class="menu-item">
+            <div class="menu-item-name"> Chair Dealers </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Wooden Furniture Dealers</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Dining Table Dealers</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Chair Manufacturers </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Revolving Chair Dealers </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> Office,Wheel and Revolving Chair Manufacturers</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Portfolio Section -->
 <div id="portfolio">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Portfolio</h2>
+  <div class="section-title text-center center">
+    <div class="overlay">
+      <h2>Gallery</h2>
       <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed.</p>
     </div>
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".web">Web Design</a></li>
-            <li><a href="#" data-filter=".app">App Development</a></li>
-            <li><a href="#" data-filter=".branding">Branding</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="categories">
+        <ul class="cat">
+          <li>
+            <ol class="type">
+              <li><a href="#" data-filter="*" class="active">All</a></li>
+              <li><a href="#" data-filter=".NettedSeries">Netted Series</a></li>
+              <li><a href="#" data-filter=".WorkstationSeries">Workstation Series</a></li>
+              <li><a href="#" data-filter=".VisitorChairs">Visitor Chairs</a></li>
+
+              <li><a href="#" data-filter=".TrainingChairs">Training Chairs</a></li>
+              <li><a href="#" data-filter=".WoodenSeries">Wooden Series</a></li>
+              <li><a href="#" data-filter=".CafeteriaChairs">Cafeteria Chairs</a></li>
+              <li><a href="#" data-filter=".WaitingRoomChairs">Waiting Room Chairs</a></li>
+
+              <li><a href="#" data-filter=".BarChairs">Bar Chairs</a></li>
+              <li><a href="#" data-filter=".ExecutiveChairs">Executive Chairs</a></li>
+              <li><a href="#" data-filter=".OfficeChairs">Office Chairs</a></li>
+            </ol>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
     </div>
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="col-sm-6 col-md-4 col-lg-4 NettedSeries">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery1.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small> </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Netted Series</h4>
+              </div>
+              <img src="img/chairs/project-gallery1.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
+        <div class="col-sm-6 col-md-4 col-lg-4 WorkstationSeries">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery2.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development</small> </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Workstation Series</h4>
+              </div>
+              <img src="img/chairs/project-gallery2.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="col-sm-6 col-md-4 col-lg-4 VisitorChairs">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery3.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small> </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Visitor Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery3.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="col-sm-6 col-md-4 col-lg-4 TrainingChairs">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery4.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small> </div>
-              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Training Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery4.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
+        <div class="col-sm-6 col-md-4 col-lg-4 WoodenSeries">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery5.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development</small> </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Wooden Series</h4>
+              </div>
+              <img src="img/chairs/project-gallery5.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+        <div class="col-sm-6 col-md-4 col-lg-4 CafeteriaChairs">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery6.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Branding</small> </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Cafeteria Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery6.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
+        <div class="col-sm-6 col-md-4 col-lg-4 WaitingRoomChairs">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery7.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development, Branding</small> </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Waiting Room Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery7.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="col-sm-6 col-md-4 col-lg-4 BarChairs">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery8.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small> </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <h4>Bar Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery8.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 ExecutiveChairs">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery9.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Executive Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery9.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 OfficeChairs">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/chairs/project-gallery10.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Office Chairs</h4>
+              </div>
+              <img src="img/chairs/project-gallery10.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Achievements Section -->
-<div id="achievements" class="text-center">
+<!-- Call Reservation Section -->
+<div id="call-reservation" class="text-center">
   <div class="container">
-    <div class="section-title center">
-      <h2>Some Stats</h2>
-      <hr>
-    </div>
-    <div class="row" style="padding-left=200px;">
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
-        <div class="achievement-box"> <span class="count">5</span>
-          <h4>Happy Clients</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
-        <div class="achievement-box"> <span class="count">3</span>
-          <h4>Awards Won</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
-        <div class="achievement-box"> <span class="count">2.5</span>
-          <h4>Years of Experience</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Resume Section -->
-<div id="resume" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Experience</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <h4>June 2015 <br>
-                - <br>
-                till date </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Accenture Service Pvt Ltd</h4>
-                <h4 class="subheading">UI and UX Developer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>I have work 1st project in Accenture NOL-APLL Logistics Super Suite using Angular Js single page dynamic Web Application.NOL-APLL is one of the leading logistics companies in Singapore which has its operations over 80 countries.           NOL-APLL deals with 3rd party supply chain management which handles both retail and wholesale goods. As a global supply chain specialist, APL Logistics offers a comprehensive range of origin and destination services in more than 60 countries, serving the automotive, consumer, industrials, and retail verticals as well as providing transportation as a service. Its services includes both domestic and international. Receiving goods from customers, estimating cost, billing, managing the loads and containers, planning and moving goods, handing over the goods to proper destination are the major tasks of NOL APLL. Specialized in Following Modules: 
-				<ul><li>1. Responsive web application</li><li> 2. Logistics support: such as details of the goods where about and probable time of delivery. </li><li>3. Understanding the client requirement.</li><li>   4. Used HTML5 and CSS3 for UI Designing. </li><li>  5. I have worked in Angular Custom Directives. </li> </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>July 2014 <br>
-                - <br>
-                June 2015 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>PeopleTech Systems Pvt Ltd</h4>
-                <h4 class="subheading">Front-end Developer and Java Spring MVC Developer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Propertrees CRM using real-estate brokers and real-estate company. It’s easily store contact and properties, and easily creates campaigns in our CRM send bulk email to customers. Then   rental property automatically alert for rental check alerts and renewal notification is shown. Shearing property other company and sharing commission equally automatically done. In case customer some requirement wants property it’s store and check matching property in that case in whole CRM. Easily understand and works environment. It’s also responsible web application so using mobile phones, tab and desktop. And excel upload bulk contact upload easily.                
-					Specialized in Following Modules:<ol start="1">
-					<li>1.Responsive web application</li>
-					<li>2.Bulk email sends easily.</li>
-					<li>3.Create own campaign’s easily and send email template. </li>
-					<li>4.Matching property in our customer requirements and send email property details to customers.</li>
-					<li>5.It’s cloud application secured and reliable . </li>
-					</ol>
-				</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="section-title center">
-      <h2>Education</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          
-          <!-- Education Section-->
-          
-          <li>
-            <div class="timeline-image">
-              <h4>2009 <br>
-                - <br>
-                2013 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>SNS College Of Technology,Coimbatore</h4>
-                <h4 class="subheading">B.E Computer science and Engineering</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Overall i have 76 percentage in Engineering.</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>2007 <br>
-                - <br>
-                2009 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Govt Hr Sec Shool,Ariyakudi</h4>
-                <h4 class="subheading">H.S.C (12TH)</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Overall i have 69 percentage in 12th.Computer Science Group</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <h4> 2005 <br>
-                - <br>
-                2007 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Algappa Model HR SEC School,Karaikudi</h4>
-                <h4 class="subheading">SSLC 10th</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Overall i have 72 percentage in 10th.</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <h2>Want to make a Chairs? Call <strong>+91-92821-89-187</strong></h2>
   </div>
 </div>
 <!-- Contact Section -->
 <div id="contact" class="text-center">
   <div class="container">
-    <div class="section-title center">
-      <h2>Contact</h2>
+    <div class="section-title text-center">
+      <h2>Contact Form</h2>
       <hr>
+      <p>Please contact me any queries</p>
     </div>
-    <div class="col-md-8 col-md-offset-2">
-      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-        <p>22 Subramaniyapuram 9th street<br>
-          South EX, Karaikudi-630002</p>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>abdulbasith.mu92@gmail.com</p>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-        <p> +91 80566-82866</p>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-      <h3>Leave me a message</h3>
+    <div class="col-md-10 col-md-offset-1">
       <form name="sentMessage" id="contactForm" novalidate>
         <div class="row">
           <div class="col-md-6">
@@ -401,34 +403,62 @@
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
+        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
       </form>
-      <div class="social">
-        <ul>
-          <li><a href="https://www.facebook.com/people/Abdul-Basith/100006098859457" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
-          <li><a href="https://www.instagram.com/abdulbasith.u/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/abdul-basith-2457a5101?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
     </div>
   </div>
 </div>
 <div id="footer">
   <div class="container text-center">
-    <div class="fnav">
-      <p>Copyright &copy; 2016 Abdul Basith.</p>
+    <div class="col-md-3">
+      <h3>Address</h3>
+      <div class="contact-item">
+        <p>No- 619,P.H Road,</p>
+        <p>Arumbakkam, Chennai- 600 106.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Factory Address</h3>
+      <div class="contact-item">
+        <p>No-313/4,A,</p>
+        <p>200 feet Road (Redial road),</p><p>Balamurugan Nagar (keelkattalai Junction),</p>
+        <p>keelkattalai, Chennai 600 117</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Contact Info</h3>
+      <div class="contact-item">
+        <p>Phone: +91- 9282229187 / 9282189187</p>
+        <p>Email: info@mail.com</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Office Hours</h3>
+      <div class="contact-item">
+        <p>Mondays to Saturday </p>
+        <p>9:00 am to 8:00 pm </p>
+        <p>By appointment only </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center copyrights">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <p>&copy; 2017 All rights reserved. Designed by <a href="http://www.saveenchairs.in/index.html" rel="nofollow">Saveen Chair Service Point</a></p>
     </div>
   </div>
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
